@@ -1,4 +1,4 @@
-import pygame:
+import pygame
 
 def main():
     print("Starting Asteroids!")
