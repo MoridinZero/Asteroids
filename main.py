@@ -54,6 +54,12 @@ def main():
 				pygame.quit()
 				sys.exit(0)
 
+		for roid in asteroids:
+			for shot in shots:
+				if roid.check_collision(shot):
+					roid.split()
+					shot.kill()
+
 		for item in drawable:
 			item.draw(screen)
 		pygame.display.flip()
